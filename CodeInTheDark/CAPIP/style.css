@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+ 		 .btn{
+			 font-size: 20px; 
+			 padding: 20px 30px; 
+			 margin-top: 20px; 
+			 background-color:#00F; 
+			 border:none; 
+			 color:#FFF;
+			 border-radius:10px;
+		}
+		.navbtn{
+			color:#FFF;
+			padding:1%;
+		}
+		#pic{
+			  	border: 1px solid black;
+  				background:url(bg.jpg);
+  				background-repeat: no-repeat;
+  				padding:15px;
+				background-size:100% 100%;
+		}
+		#main-grid{
+			padding-right:2%;
+			display:grid;
+			grid-template-columns:60% auto;
+			padding:20px;
+		}
+		#grid{
+			width:100%;
+			height:100%;
+			display: grid;
+			grid-template-columns:auto auto;
+			grid-gap:10px;
+			padding:10px 10px 0px 10px;
+			//float:left;
+			
+		}
+		.card{
+			background-color:#0CF;
+  			border:none;
+			height:auto;
+			padding:0px;
+			
+		}
+		.card-data{
+			padding:10px;
+			font-size:large;
+		}
+		.card-img{
+			width:50%; 
+			height:auto; 
+			float:left; 
+			padding:2%;
+		}
+			
+		#frm{
+			height:auto;
+			border:none;
+			margin:10px 10% 0px 10%;
+			padding-top:10%;
+			background-color:#0CF;
+		}
+		th,td{
+			font-size:x-large;
+		}
+		.foot {
+			background:#069;
+			padding:5px;
+			color:#fff;
+			text-align: center;
+		}
+		input[type=text]{
+			font-size:14px; 
+			background-color:#0CF;
+		}
