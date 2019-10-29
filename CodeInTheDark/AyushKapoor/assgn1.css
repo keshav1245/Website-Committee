@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+nav{
+ 
+    background: #5767f1;
+    padding: 20px;
+}
+#brand{
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-decoration-line: none;
+    margin-left: 60px;
+    color: white;
+}
+.nav-items{
+    text-decoration-line: none;
+    color: white;
+    float: right;
+    margin: 5px 50px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+button:hover{
+    background: #5797f1
+}
+.outer{
+    background-image: url("bg.jpg");
+    height: 400px;
+}
+.inner{
+    color:white;
+    text-align: center; 
+    padding-top:100px ;
+}
+.inner h1{
+    font-size: 2.5rem;
+}
+.inner p{
+    font-weight: 300;
+}
+button{
+    padding:15px 50px;  
+    background-color: #5767f1;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+img{
+    border: 2px solid #dddff0;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.c1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #dddff0;
+    background-color: #dddff0;
+    display: inline-block;   
+}
+.c1 p,.c1 h3,.c1 a {
+    margin: 10px 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 50% 50% ; 
+  
+   
+}
+.outer-container{
+    display: grid;
+    grid-template-columns: 66% 34% ; 
+    padding: 10px;
+    margin: 0 60px;
+}
+.row2{
+    margin-top: 40px;
+    
+}
+.rform{
+    height: 448px;
+    width: 420px;
+    padding: 0 30px;
+    background-color: #dddff0;
+    
+}
+.rform h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.finfo{
+    width: 300px;
+}
+
+input{
+  display: inline;
+}
+h2{
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+input{
+    background-color: #dddff0;
+    border: 1px solid black;
+    padding: 8px;
+    width: 85%;
+    margin-bottom: 26px;
+}
+#btn{
+    text-align: center;
+}
+#footer{
+    background-color: black;
+    text-align: center;
+    margin-top: 30px;
+}
+#footer div a{
+    text-decoration-line: none;
+    color: white;
+}
+.c1 p,.c1 a{
+    font-size: 0.85rem;
+}
+.c1 a{
+    text-decoration-line: none;
+    color: rgb(204, 78, 78);
+}
