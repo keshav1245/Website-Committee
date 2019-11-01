@@ -11,6 +11,15 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.parallax2{
+    margin-top: 100px;
+    background: url("../images/slide04.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .gridContainer{
     display: grid;
     grid-template-columns: 50% 50% ; 
@@ -23,12 +32,51 @@ body{
     height: 250px;
     margin-bottom: 0px;
     border: 3px solid white;
+    vertical-align: middle;
 }
 .gridContainer div div{
     background-color: white;
     width: 550px;
     height: 250px;
     display: inline-block;
-    margin-top: 0px;
     border: 3px solid white;
+}
+.gridContainer div div p{
+    margin: 5px 35px;
+}
+.btn{
+    background: white;
+    border: 1px solid rgb(87, 84, 84);
+    font-size: 1.1rem;
+    color: rgb(87, 84, 84);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgb(87, 84, 84);
+    color:white;
+    transition: 0.4s;
+}
+button:focus {
+    outline:0;
+}
+nav{
+    background: black;
+    width: 100%;
+    height: 120px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+a{
+    padding: 8px;
+    color: #b8afaf;
+    transition: 0.4s;
+}
+a:hover{
+    color: white;
+
 }
