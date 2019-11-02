@@ -1,0 +1,273 @@
+*{
+	box-sizing: border-box;
+}
+body,html{
+	height: 100%;
+
+	padding: 0;
+	margin: 0;
+}
+
+.banner{
+	padding: 0;
+	margin: 0;
+	z-index: 2;
+	position: relative;
+	top: 0%;
+	background: url("images/slide01.jpg");
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+
+.banner .content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+	line-height: 0.5;
+}
+
+.overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content h1{
+	font-size: 120px;
+}
+
+.content h5{
+	font-size: 20px;
+
+}
+
+.content h5 span{
+	border-bottom: 1px solid #fff;
+	padding-bottom: 20px; 
+}
+
+.navbar{
+	background-color:#000;
+	width: 100%;
+	z-index: 5;
+	position: absolute;
+	top: 0%;
+	color: #fff;
+	float: left;
+	position: fixed;
+}
+
+.navbar p{
+	display: inline-block;
+	padding: 3px 12px;
+	color: white;
+}
+
+.menu {
+	float: right;
+}
+
+
+.card-section{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-color: #eee;
+	
+}
+
+.card-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	display: inline-flex;
+	transform:translate(-50%,-50%);
+	max-width: 100%;
+}
+
+.card{
+	margin: 30px;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 0px 4px 8px 2px #ccc;
+}
+
+
+.card div{
+	padding: 40px;
+
+}
+
+.card div h5{
+	font-size: 16px;
+	font-weight: normal;
+	color: #aaa;
+}
+
+.card div h3{
+	font-size: 30px;
+	font-weight: normal;
+	color: #000;
+}
+
+.card div h5 span{
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 20px;
+}
+
+.card div p{
+	line-height: 1.5;
+	color: #aaa;
+	font-size: 20px;
+	padding: 10px;
+	text-align: left;
+	font-weight: normal;
+}
+
+.card div button{
+	background: #fff;
+	border: 2px solid #aaa;
+	outline: none;
+	color: #000;
+	transition: 0.5s;
+	padding: 18px 20px;
+}
+
+.card div button:hover{
+	transition: 0.5s;
+	background-color: #ddd;
+}
+
+.parallax{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: url("images/bg.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.parallax-text{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	line-height: 0.5;
+}
+
+.parallax-text h5{
+	font-weight: normal;
+	font-size: 20px;
+	color: #ccc;
+	opacity: 0.7;
+}
+
+.parallax-text h5 span{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+.parallax-text h1{
+	font-weight: normal;
+}
+.overlay-parallax{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.grid-section{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	text-align: center;
+	/*padding: 50px;*/
+}
+
+.grid-heading{
+	line-height: 0.5;
+	padding: 40px;
+}
+.grid-heading h1{
+	font-weight: normal;
+}
+.grid-heading h5{
+	font-weight: normal;
+	font-size: 20px;
+	color: #ccc;
+}
+
+.grid-heading h5 span{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+}
+
+.block-outer{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.grid-block{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+}
+
+.grid img{
+	background-color: #fff;
+	padding: 15px;
+	width: 100%;
+	height: 100%;	
+}
+
+
+
+.footer{
+	background:#000;
+	position: relative;
+	bottom: 0%;
+	left: 0%;
+	width: 100%;
+	height: 250px;
+	text-align: center;
+}
+
+.footer-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #aaa;
+}
+
+.footer-text i{
+	font-size: 32px;
+	padding: 10px;
+	padding-bottom: 35px;
+
+}
+
+.footer-text i:hover{
+	color: #fff;
+}
