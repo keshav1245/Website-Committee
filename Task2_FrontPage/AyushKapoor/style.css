@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 .parallax{
 
@@ -18,24 +19,35 @@ body{
 }
 .parallax h1{
     font-size: 5em;
+    font-weight: 500;
     margin-top: 1%;
 }
 .parallax p{
-    font-size: 1.3rem;;
+    font-size: 1.1rem;
+    font-weight: 200;
 }
 .parallax2{
     margin-top: 100px;
-    background: url("../images/slide04.jpg");
-    height: 150px;
+    background: url("../images/bg.jpg");
+    height: 180px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-	padding-top: 10%;
+	padding-top: 7%;
 	color: white;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 18px 23px rgba(0,0,0,0.1);
+}
+.parallax2 h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 1%;
+}
+.parallax2 p{
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 .gridContainer{
     display: grid;
@@ -51,9 +63,12 @@ body{
     text-align: center;
     
 }
+.heading{
+    font-weight: 500;
+}
 .gridContainer div img{
     width: 550px;
-    height: 250px;
+    height: 300px;
     border: 3px solid white;
     vertical-align: middle;
 }
@@ -66,12 +81,22 @@ body{
 .gridContainer div div{
     background-color: white;
     width: 550px;
-    height: 250px;
+    height: 375px;
     display: inline-block;
     border: 3px solid white;
 }
-.gridContainer div div p{
+.para{
     margin: 5px 35px;
+    text-align: left;
+    line-height: 25px;
+    font-size: 0.9rem;
+}
+.topline{
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 40px;
 }
 .btn{
     background: white;
@@ -113,8 +138,30 @@ a:hover{
     color: #b8afaf;
     font-size: 0.8rem;
 }
-hr{
+.parallax hr{
 	width: 200px;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.parallax2 hr{
+	width: 600px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+#outside{
+    text-align: center;
+	padding-top: 5%;
+	color:black;
+
+}
+
+#outside h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 1%;
+
+}
+#outside p{
+    font-size: 1.3rem;
+    font-weight: 200;
 }
