@@ -1,119 +1,131 @@
 <html>
     <head>
-        <style>
-            div{
-                width:1336px;
+        <style type="text/css">
+            body{
+                margin: 0;
             }
-            li{
-                display:inline;
-                color:white;
-                margin:right:10px;
+            nav{
+                position: fixed;
+                background-color: #0380fc;
+                width: 100%;
+                height: 6%;
+                padding-top: 1.5%;
+                z-index: +1;
             }
-            #apratim_head{
-                margin-right:200px;
-                color:white;
+            nav>a{
+                color: white;
+                text-decoration-line: none;
+                margin: 1%;
             }
-            #nav_bar{
-                background-color:blue;
-                height:50px;
-                position:fixed;
+            #img_bar{
+                position: absolute;
+                z-index: -1;
+                }
+            #img_txt{
+                text-align: center;
             }
-            #footer_bar{
-                height:50px;
-                background-color:black;
+             .content_img{
+                height: 130px;
             }
-            #img_bar,#main_bar{
-                height:334px;
+            h5{
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 0;
             }
-            .img{
-                background-color:#0000bb;
+            #recipe a,p{
+                font-size: 12px;
             }
-            .content{
-                float:right;
+            .main_bar{
+                display: grid;
+                grid-template-areas: 'a1 a2 a3' 'a4 a5 a3';
+                grid-gap: 20px;
+                padding-left: 50px;
+                padding-right: 50px;
+                background-color: white;
             }
-            #reserve{
-                width:500px;
-                margin-left:20px;
-                margin:right:23px;
+            .img1{grid-area: a1; background-color: rgba(74, 145, 255, 0.3);}
+            .img2{grid-area: a2; background-color: rgba(74, 145, 255, 0.3);}
+            #reserve{grid-area: a3; background-color: rgba(74, 145, 255, 0.3);}
+            .img3{grid-area: a4; background-color: rgba(74, 145, 255, 0.3);}
+            .img4{grid-area: a5; background-color: rgba(74, 145, 255, 0.3);}
+            td{
+                text-align: left;
+                padding: 11px;
             }
-            #recipe{
-                width:800px;
-                margin-left:23px;
+            input[type=text]
+            {
+               background-color: rgba(74, 145, 255, 0.3);
+               border-radius: 4px; 
+            }
+            input[type=submit]
+            {
+                border-radius: 5px;
             }
         </style>
+
         <title>Apratim 2K19</title>
         <meta name='viewport' width='device-width' intial-scale=1.0>
         </head>
-        <body bgcolor='white'>
-            <div id='nav_bar'>
-                <nav>
-                    <ul>
-                        <li id='apratim_head'><a href='#'><b>Apratim 2K19</b></a></li>
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>Food Menu</a></li>
-                        <li><a href='#'>My Orders</a></li>
-                        <li><a href='#'>Sign Up</a></li>
-                        </ul>
-                </nav>
-            </div>
+        <body>
+            <nav><a href='#' style="margin-right: 60%;margin-left: 1%;"><b>Apratim 2K19</b></a> <a href='#'>Home</a> <a href='#'>Food Menu</a> <a href='#'>My Orders</a> <a href='#'>Sign Up</a></nav>
             
             <div id='img_bar'>
-                <img src='./bg.jpg' width=1366/>
-                <div style='position:relative; z-index=-1'>
-                    <p style='text-opacity:0.5;'>Find some delicious food here</p>
-                    <h1 style='color:white;'>Asian Restraunt</h1>
-                    <input type='button' value='Order Now' style='background-color:blue; color:white; font-size:22px;'>
-                </div>
+                <img src='./bg.jpg' width=100%/>
+            </div>
+            <br><br><br><br><br><br><br>
+            <div id="img_txt">
+                <p style='opacity:0.7;color: white'>Find some delicious food here</p>
+                <h1 style='color:white;'>Asian Restraunt</h1>
+                <input type='button' value='Order Now' style='background-color:#0380fc; color:white; font-size:22px;'>
             </div>
         
-        <div id="main_bar">       
-            <div id='recipe'>
-                <div class='img'>
-                        <img src='./1.jpg'/>
-                        <div class='content'>
-                            <h5>Knaaus Siarcha</h5>
-                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.</p>
-                            <a href='#' style='color:red; font-size:12px'>CONTINUE READING</a>
+            <br><br><br><br><br><br><br><br>
+            <div class="main_bar">
+                    <div class='img1'>
+                        <img src='./1.jpg' class="content_img" align="left" />
+                        <div class='content1'>
+                            <h5 >Knaaus Siarcha</h5>
+                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.
+                            <a href='#' style='color:red;'>CONTINUE READING</a></p>
                         </div>
-                </div>
-                <div class='img'>
-                        <img src='./2.jpg'/>
-                        <div class='content'>
+                    </div>
+                    <div class='img2'>
+                    <img src='./2.jpg' class="content_img" align="left"/>
+                        <div class='content2'>
                             <h5>Knaaus Siarcha</h5>
-                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.</p>
-                            <a href='#' style='color:red; font-size:12px'>CONTINUE READING</a>
+                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.
+                            <a href='#' style='color:red;'>CONTINUE READING</a></p>
                         </div>
-                </div>
-                <div class='img' style='float:right;'>
-                        <img src='./3.jpg'/>
-                        <div class='content'>
+                    </div>
+                    <div class='img3'>
+                    <img src='./3.jpg' class="content_img" align="left"/>
+                        <div class='content3'>
                             <h5>Knaaus Siarcha</h5>
-                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.</p>
-                            <a href='#' style='color:red; font-size:12px'>CONTINUE READING</a>
+                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.
+                            <a href='#' style='color:red;'>CONTINUE READING</a></p>
                         </div>
-                </div>
-                <div class='img' style='float:right;'>
-                        <img src='./4.jpg'/>
-                        <div class='content'>
+                    </div>
+                    <div class='img4'>
+                        <img src='./4.jpg' class="content_img" align="left"/>
+                        <div class='content4'>
                             <h5>Knaaus Siarcha</h5>
-                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.</p>
-                            <a href='#' style='color:red; font-size:12px'>CONTINUE READING</a>
+                            <p>Mauris non tempor quam, et lacinia sapien. Mauris accu msan eros eget libero posuere vulputate. Mauris non tempor quam. Mauris accu msan eros eget libero posuere vulputate.
+                            <a href='#' style='color:red;'>CONTINUE READING</a></p>
                         </div>
+                    </div>
+                    <div id="reserve">
+                    <form><table>
+                        <tr><th colspan="2" style="padding-top: 8px;">RESERVATION</th></tr>
+                        <tr><td><label>First Name</label></td><td><input type='text'></td></tr>
+                        <tr><td><label>Last Name</label></td><td><input type='text'></td></tr>
+                        <tr><td><label>Date</label></td><td><input type='text'></td></tr>
+                        <tr><td><label>No. of guests</label></td><td><input type='text'></td></tr>
+                        <tr><td colspan="2" style="text-align: center;"><input type='Submit' value='BOOK NOW' style='background-color:#0380fc; color:white;'></td></tr>
+                    </table></form>
                 </div>
             </div>
-                <div style='float:right;' class='img' id="reserve">
-                    <form>
-                        <h2>RESERVATION</h2>
-                        <label>First Name</label><input type='text'><br>
-                        <label>Last Name</label><input type='text'><br>
-                        <label>Date</label><input type='text'><br>
-                        <label>No. of guests</label><input type='text'><br>
-                        <input type='Submit' value='BOOK NOW' style='background-color:blue; color:white; margin:auto; width:100%;'>
-                    </form>
-                </div>
-        </div>
-                <div id="footer_bar">
-                    <p style="color:white; text-align:center;">#thereellife #plasticban</p>
-                </div>
-            </body>
+            <div id="footer_bar">
+                <p style="color:white; text-align:center;background-color:#0f1c30;height:5%;font-size: 18px;padding-top: 1.5%;margin-bottom: 0;">#thereellife #plasticban</p>
+            </div>
+        </body>
 </html>
