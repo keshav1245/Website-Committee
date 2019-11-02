@@ -10,10 +10,16 @@
     <title>Task2</title>
 </head>
 <body>
+
     <div class="parallax">
-        <p> Lorem ipsum dolor sit amet consectetur</p>
-        <hr>
-        <h1>Magna etiam</h1>
+        <nav id="mainNavbar" >
+            <a href="">Task2</a>
+        </nav>
+        <div>
+            <p> Lorem ipsum dolor sit amet consectetur</p>
+            <hr>
+            <h1>Magna etiam</h1>
+        </div>
     </div>
     <div class="gridContainer">
         <div>
@@ -48,23 +54,37 @@
     <div class="gridContainer2">
         <div>
             <img src="../images/pic01.jpg" alt="">
+        </div>
+        <div>
             <img src="../images/pic02.jpg" alt="">
         </div>
         <div>
             <img src="../images/pic03.jpg" alt="">
+        </div>
+        <div>
             <img src="../images/pic04.jpg" alt="">
         </div>
     </div>
-    <nav>
+    <nav id="footer">
         <div>
             <a href=""><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
             <a href=""><i class="far fa-envelope"></i></a>
         </div>
-        <div id="footer">
+        <div >
             <p>Copyright. All Rights Reserved.</p>
         </div>
     </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 </html>
