@@ -3,7 +3,7 @@
 }
 body,html{
 	height: 100%;
-
+	overflow-x: hidden;
 	padding: 0;
 	margin: 0;
 }
@@ -76,6 +76,64 @@ body,html{
 
 .menu {
 	float: right;
+}
+
+.menu-expand{
+	width: 20%;
+	position: absolute;
+	top: 0;
+	right: 0%;
+	margin-right: -20%;
+	transition: 0.5s;
+	z-index: 10;
+	height: 100%;
+	background-color: #000;
+}
+
+.menu-list h1{
+	position: absolute;
+	right: 0%;
+	display: block;
+	top: 0%;
+	color: #aaa;
+	margin: 20px;
+	transition: 0.3s;
+}
+
+.menu-list h1:hover{
+	color: #eee;
+	transition: 0.3s;
+}
+
+.menu-list ul{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background-color: transparent;
+	position: absolute;
+	top: 10%;
+	float: left;
+}
+
+.menu-list ul li{
+	width: 100%;
+}
+
+.menu-list ul li a{
+	text-decoration: none;
+	display: block;
+	color: #aaa;
+	text-align: center;
+	transition: 0.3s;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 14px 16px;
+}
+
+.menu-list ul li a:hover{
+	transition: 0.3s;
+	color: #fff;
 }
 
 
