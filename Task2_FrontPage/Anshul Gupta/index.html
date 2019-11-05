@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DISCRETE STRUCTURES</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box
+}
+body{
+      font-family: 'Roboto Slab', serif;
+      font-size: 2.1rem;
+      margin:0;
+      top:50%;
+      left: 50%;
+      transform: (-50,-50);
+      background-color: rgba(27,31,34,0.85);
+      background-image: url(images/bg.jpg); width:100%;
+      background-repeat: repeat;
+ }
+h1{
+  font-size: 4.1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: black;
+  padding-top: 0px;
+  position: relative;
+}
+p{
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+}
+.mySlides {
+  display: none
+}
+.img1{
+  vertical-align: middle;
+  height: 700px;
+}
+.ccetlogo{
+ 	display: block;
+  height: 80%;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-left: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+</style>
+</head>
+<body>
+<div class="slideshow-container">
+		<img src="images/ccetLogoBlack.png" class="ccetlogo">
+		<h1>DISCRETE STRUCTURES</h1>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 23</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 23</div>
+  <div class="text">
+  	<p><u>Weighted Graph?</u>
+  	A graph having weights i.e. a certain value assigned to the edges.<br><br><br>
+	<img src="images/w1.png">
+  </p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 23</div>
+  <div class="text">
+  	<p><u>Shortest Path</u><br>
+  		It is the path that one can take to travel the minimum distance in order to reach a particular destination.<br><br>
+	<img src="images/map.png">
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 23</div>
+  <div class="text">
+  	<p><u>Shortest Path In A Weighted Graph</u><br>
+  		 In technical terms, it can be said as the shortest path that we can traverse between any two vertices starting from one and leading to other.<br><br>
+	<img src="images/w1.png">
+  </p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 23</div>
+  <div class="text">
+  	<p><u>Shortest path in a weighted Graph</u>(Hands On Implementation)<br>
+  		 <br><br>
+  		 <img src="images/ex.jpg">
+  	</p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 23</div>
+  <img src="" style="width:100%">
+  <div class="text">
+  	<p>Step 1: Consider two sets P and T. P contains those points which have been used while the T contains unused points/value.<br>
+  	Step 2: Let the distance between adjacents of vertex 0 be <br>
+  				L(7)=weight=8;<br>
+  				L(1)=weight=4;// Also tells the distance between vertex 0 and vertex 1.<br>
+  				while others<br>
+  				L(2)=L(3)=L(4)=L(5)=L(6)=L(8)= infinite;<br>
+  	Step 3: Find the Element having minimum value among all and put it in the set P.<br>
+  			Now here P={0,1} T={2,3,4,5,6,7,8}<br>
+  	Step 4: Suppose we want to find shortest path from 0 to 4. So we need to find the element having minimum value
+  	put it in P. Repeat until 4 comes in the set P.<br>
+  	<img src="images/ex1.jpg" style="width: 10%;height: 20%">
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 23</div>
+  <div class="text"><p>
+  	Step 5: *IMPORTANT*FORMULA*<br>
+  		L1(x)=min[L(x),L(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L1(2)=min[L(2),L(1)+8]=min[infinite,4+8]=12<br>
+ 		Similarly,<br>
+ 		L1(3)=min[infinite,4+infinite]=infinite<br>
+ 		L1(4)=min[infinite,4+infinite]=infinite<br>
+ 		L1(5)=min[infinite,4+infinite]=infinite<br>
+ 		L1(6)=min[infinite,4+infinite]=infinite<br>
+ 		L1(7)=min[8,4+11]=8<br>
+ 		L1(8)=min[infinite,4+infinite]=infinite<br>
+ 		Since L1(7) is minimum amongst all L1 so we put 7 in P i.e.<br>
+ 		P={0,1,7} AND T={2,3,4,5,6,8}<br></p>
+ 		<img src="images/ex2.jpg" style="width: 20%;height: 10%">
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 23</div>
+  <div class="text"><p>
+  	Step 6: Find L2<br>
+  		L2(x)=min[L1(x),L1(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L2(2)=min[L(2),L1(7)+infinite]=min[12,8+infinite]=12<br>
+ 		Similarly,<br>
+ 		L2(3)=min[infinite,8+infinite]=infinite<br>
+ 		L2(4)=min[infinite,8+infinite]=infinite<br>
+ 		L2(5)=min[infinite,8+infinite]=infinite<br>
+ 		L2(6)=min[infinite,8+1]=9<br>
+ 		L2(8)=min[infinite,8+7]=15<br>
+ 		Since L2(6) is minimum amongst all L2 so we put 6 in P i.e.<br>
+ 		P={0,1,7,6} AND T={2,3,4,5,8}<br></p>
+ 		<img src="images/ex3.jpg" style="width: 20%;height: 10%">
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 23</div>
+  <div class="text"><p>
+  	Step 7: Find L3<br>
+  		L3(x)=min[L2(x),L2(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L3(2)=min[L2(2),L2(6)+W(2,6)]=min[12,9+infinite]=12<br>
+ 		Similarly,<br>
+ 		L3(3)=min[infinite,9+infinite]=infinite<br>
+ 		L3(4)=min[infinite,9+infinite]=infinite<br>
+ 		L3(5)=min[infinite,9+2]=11<br>
+ 		L3(8)=min[15,9+6]=15<br>
+ 		Since L3(5) is minimum amongst all L3 so we put 5 in P i.e.<br>
+ 		P={0,1,7,6,5} AND T={2,3,4,8}<br></p>
+ 		<img src="images/ex4.jpg"style="width: 20%;height: 10%">
+ </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 23</div>
+  <div class="text"><p>
+  	Step 8: Find L4<br>
+  		L4(x)=min[L3(x),L3(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L4(2)=min[L3(2),L3(5)+W(2,5)]=min[12,11+4]=12<br>
+ 		Similarly,<br>
+ 		L4(3)=min[infinite,11+14]=25<br>
+ 		L4(4)=min[infinite,11+10]=21<br>
+ 		L4(8)=min[15,11+infinite]=15<br>
+ 		Since L4(2) is minimum amongst all L4 so we put 2 in P i.e.<br>
+ 		P={0,1,7,6,5,2} AND T={3,4,8}<br></p>
+ </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 23</div>
+  <div class="text"><p>
+  	Step 9: Find L5<br>
+  		L5(x)=min[L4(x),L4(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L5(3)=min[L4(3),L4(2)+W(3,2)]=min[25,12+7]=19<br>
+ 		Similarly,<br>
+ 		L5(4)=min[21,12+infinite]=21<br>
+ 		L5(8)=min[15,12+2]=14<br>
+ 		Since L5(8) is minimum amongst all L5 so we put 8 in P i.e.<br>
+ 		P={0,1,7,6,5,2,8} AND T={3,4}<br></p>
+ </div>
+</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 23</div>
+  <div class="text"><p>
+  	Step 10: Find L6<br>
+  		L6(x)=min[L5(x),L5(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L6(3)=min[L5(3),L5(8)+W(3,8)]=min[19,14+infinite]=19<br>
+ 		Similarly,<br>
+ 		L6(4)=min[21,14+infinite]=21<br>
+ 		Since L6(3) is minimum amongst all L6 so we put 3 in P i.e.<br>
+ 		P={0,1,7,6,5,2,8,3} AND T={4}<br></p>
+ </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 23</div>
+  <div class="text"><p>
+  	Step 11: Find L7<br>
+  		L7(x)=min[L6(x),L6(prev)+W(x,prev)], where x belongs to T and previous belong to P.<br>
+ 		SO Here L7(4)=min[L6(4),L6(3)+W(4,3)]=min[21,19+9]=21<br>
+ 		Since there are no elements left so we put 4 in P i.e.<br>
+ 		P={0,1,7,6,5,2,8,3,4} AND T={}<br>
+ 			SO, Now we can say starting from 0TH vertex, the shortest distance between<br>
+ 			V(0,1)= 4 UNITS  [PATH BEING 0->1]<br>
+ 			V(0,2)= 12 UNITS [PATH BEING 0->1->2] <br>
+ 			V(0,3)= 19 UNITS [PATH BEING 0->1->2->3]<br>
+ 			V(0,4)= 21 UNITS [PATH BEING 0->7->6->5->4]<br>
+ 			V(0,5)= 11 UNITS [PATH BEING 0->7->6->5]<br>
+			V(0,6)= 9 UNITS  [PATH BEING 0->7->6]<br>
+ 			V(0,7)= 8 UNITS  [PATH BEING 0->7]<br>
+ 			V(0,8)= 14 UNITS [PATH BEING 0->1->2->8]<br>
+	</p>
+ 		<img src="images/ex5.jpg" style="width: 20%;height: 10%">
+ </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">14 / 23</div>
+  <div class="text"><p><u>Euler Paths and Circuits</u><br><br>
+    An Euler path is a path using every
+edge of the graph G exactly once.<br>
+An Euler circuit is an Euler path
+that returns and end at the same vertex.
+</p>
+<img src="images/pic1.jpg" width="80%" style="width:20%;height: 40%";>
+<img src="images/pic2.jpg" width="80%" style="margin-left:25%;width:20%;height:20%;">
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15 / 23</div>
+<div class="text">
+<p><u>Necessary and Sufficient Conditions</u><br><br>
+  The graph must be connected.<br>
+  <b><u>THEOREM 1</u></b>-  A connected multigraph with at least two vertices has an Euler circuit if and only if each of its vertices has even degree.<br>
+  <b><u>THEOREM 2</u></b> -  A connected multigraph has an Euler path but not an Euler circuit if and only if it has exactly two vertices of odd degree.
+</p>
+</div></div>
+<div class="mySlides fade">
+  <div class="numbertext">16 / 23</div>
+<div class="text"><h1><b><u>Examples</u></b></h1>
+    <p align="left">Which of the following graphs has an Euler path?</p>
+<img src="images/eg1.jpg" width="40%">
+<p>Which of the following graphs has an Euler circuit?</p>
+  <img src="images/eg2.jpg" width="40%";></div><br>
+</div></div>
+<div class="mySlides fade">
+  <div class="numbertext">17 / 23</div>
+  <div class="text"><p><u>Hamiltonian Paths And Hamiltonian Circuits</u><br><br>
+    A Hamiltonian path in a graph G is a path which visits every vertex in G exactly once.<br>
+A Hamiltonian circuit is a circuit that visits every vertex in G exactly and starts and ends at the same vertex.</p>
+<img src="images/ham.jpg" width="20%" style="margin-left:10%;margin-top: 3%";>
+<img src="images/ham1.jpg" width="30%" style="margin-left:10%;margin-top: 5%";>
+</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">18 / 23</div>
+  <div class="text">
+    <p><u>Sufficient Conditions</u><br>
+      <b><u>Dirac’s Theorem</u></b>-If G is a simple graph with n vertices with n ≥ 3 such that the degree of every vertex in G is at least n/2, then G has a Hamiltonian circuit.<br><br>
+       <b><u>Ore’s Theorem</u></b>-Let G be a connected graph with n vertices then G is Hamiltonian if n ≥ 3 and n ≤ degree(u) + degree(v) for every pair of non-adjacent vertices u and v in G.
+    </p>
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">19 / 23</div>
+  <div class="text">
+    <p><u>Comparison between both the circuits</u><br><br>
+      There is a one-word difference between Euler paths/circuits and Hamilton paths/circuits: The former covers all edges; the latter covers all vertices.<br>
+       <br></p>
+       <img src="images/comparison.jpg" width="37%">
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">20 / 23</div>
+  <div class="text"><p><u>Königsberg Bridge</u><br>
+  	Königsberg was a city in Prussia situated on the Pregel River.<br>
+    In Konigsberg, Germany, a river ran through the city such that in its center was an island, and after passing the island, the river broke into two parts. Seven bridges were built so that the people of the city could get from one part to another.
+    It became a tradition to try to walk around the town in a way that only crossed each bridge once, but it proved to be a difficult problem.<br></p>
+    <img src="images/Konigsberg_bridges.png" style="height:400px;
+    width:500px">
+</p>
+
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">21 / 23</div>
+  <div class="text"><p><u>QUESTION</u><br>
+    Determine whether it’s possible to walk across all the bridges exactly once in returning back to the starting land area?<br>
+    <br>In 1736 Euler proved that the walk was not possible to do
+  He proved this by inventing a kind of diagram called a network, that is made up of vertices (dots where lines meet) and arcs (lines). Define the degree of a vertex to be the number of edges incident to it.
+
+He used four dots (vertices) for the two riverbanks and the two islands. These have been marked A, B and C, D.<br><br>
+  Euler showed that there is a walk starting at any vertex, going through each edge exactly once and terminating at the start vertex iff the degree of each vertex is even. This walk is called Eulerian.<br>
+ <br> The seven lines (arcs) are the seven bridges.<br>
+
+   <img src="images/koni2.png" style="height:400px;
+    width:700px">
+</p>
+
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"> 22/ 23</div>
+  <div class="text"><p>3 bridges (arcs) join to riverbank A, and 3 join to riverbank B. 5 bridges (arcs) join to island C, and 3 join to island D.
+  <br>
+  <img src="images/graph.png" style="height:400px;width:700px">
+ <br> All the vertices have an odd number of arcs, so they are called odd vertices. (An even vertex would have to have an even number of arcs joining to it).
+
+</p>
+
+  </div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">23 / 23</div>
+  <div style="text-align: center;">
+  		<p>
+  			<u><H2><b>REFERENCES</b></H2></u>
+  			--><a href="https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/"> GeeksforGeeks</a><br>
+  			--><a href="https://www.w3schools.org">W3Schools (for slideshow work only)</a><br>
+			--><a href="https://www.slideshare.net">Slide Share</a><br>
+			-->Discrete Mathematics and Its Applications (McGraw-Hill International Editions: Mathematics Series) Jun 1999
+by Kenneth H. Rosen.<br>
+  		<b>Thanks A Lot Folks!	<br>
+  		That's all for today.<br>
+  		Follow us on Github at:<br></b>
+ 		--><a href="https://www.Github.com/anshulg954" target="_blank">anshulg954</a><br>
+ 		--><a href="https://www.Github.com/aayushi1499">aayushi1499</a><br>
+ 		--><a href="https://www.Github.com/co18347">shriyaverma</a><br>
+  		</p>
+
+  </div>
+</div>
+<div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+  <span class="dot" onclick="currentSlide(15)"></span>
+  <span class="dot" onclick="currentSlide(16)"></span>
+  <span class="dot" onclick="currentSlide(17)"></span>
+  <span class="dot" onclick="currentSlide(18)"></span>
+  <span class="dot" onclick="currentSlide(19)"></span>
+  <span class="dot" onclick="currentSlide(20)"></span>
+  <span class="dot" onclick="currentSlide(21)"></span>
+  <span class="dot" onclick="currentSlide(22)"></span>
+  <span class="dot" onclick="currentSlide(23)"></span>
+</div>
+<div>
+<p style="line-height: 4.4rem;letter-spacing: 0.5rem;">Shortest Path In Weighted Graphs|Eulerian & Hamiltonian<br>Paths & Circuits|Konigsberg Bridge</p>
+
+<p style="line-height: 1.4rem;letter-spacing: 0.5rem;">Anshul Gupta|Aayushi Bansal|Shriya Verma</p>
+<p style="text-align: center;line-height: 1.4rem;letter-spacing: 0.5rem;">CO18311|CO18303|CO18347</p>
+<p>Faculty Mentor: Mr. Amit Chabbra</p>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
