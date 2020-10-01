@@ -1,3 +1,3 @@
 # Website-Committee
 
-Lets Learn n Grow !
+This website is for learning and growing together!
