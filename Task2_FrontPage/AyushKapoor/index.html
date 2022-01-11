@@ -6,14 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8ae3bbb038.js" crossorigin="anonymous"></script>
+    <script  src="nav.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,700,800&display=swap" rel="stylesheet">
+    <script></script>
     <title>Task2</title>
 </head>
 <body>
+    <div id="mySidenav" class="sidenav" style="float: right;">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    
     <div class="parallax">
-        <p> Lorem ipsum dolor sit amet consectetur</p>
-        <hr>
-        <h1>Magna etiam</h1>
+        <nav id="mainNavbar" >
+            <a href="">Task2</a>
+            <!-- <div class="container" onclick="myFunction(this)" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                
+            </div> -->
+            <span class="menu" onclick="openNav()">&#9776; Menu</span>
+            <!-- <a href="" onclick="myFunction(this)" class="menu">Menu</a> -->
+        </nav>
+        <div id="content">
+            <p> Lorem ipsum dolor sit amet consectetur</p>
+            <hr>
+            <h1>Magna etiam</h1>
+        </div>
     </div>
     <div class="gridContainer">
         <div>
@@ -48,23 +71,28 @@
     <div class="gridContainer2">
         <div>
             <img src="../images/pic01.jpg" alt="">
+        </div>
+        <div>
             <img src="../images/pic02.jpg" alt="">
         </div>
         <div>
             <img src="../images/pic03.jpg" alt="">
+        </div>
+        <div>
             <img src="../images/pic04.jpg" alt="">
         </div>
     </div>
-    <nav>
+    <nav id="footer">
         <div>
             <a href=""><i class="fab fa-facebook-f"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
             <a href=""><i class="fab fa-instagram"></i></a>
             <a href=""><i class="far fa-envelope"></i></a>
         </div>
-        <div id="footer">
+        <div >
             <p>Copyright. All Rights Reserved.</p>
         </div>
     </nav>
+
 </body>
 </html>
